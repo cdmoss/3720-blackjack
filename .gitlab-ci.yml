@@ -30,15 +30,15 @@ staticAnalysis:
 buildTests:
    stage: build
    script:
-      - make test_project
+      - make test_blackjack
    artifacts:
       paths:
-         - test_project
+         - test_blackjack
 
 unitTests:
    stage: unit_test
    script:
-      - test_project
+      - test_blackjack
 
 memoryLeaks:
    stage: active_tests
