@@ -1,0 +1,58 @@
+#ifndef PLAYER_H
+#define PLAYER_H
+
+#include <string>
+#include <vector>
+#include "Card.h"
+
+class Player {
+public:
+	/**
+	 *	Constructor
+	 *	@param name : The player's name
+	*/
+	Player(std::string name);
+
+	/**
+	 *	Gets the player's name
+	 *	@returns the player's name
+	*/ 
+	std::string getName() const;
+
+	/**
+	 *	Make the player recieve a hit from the dealer
+	 *	@param card : The card given to the player
+	*/
+	void hit(Card* card);
+
+	/**
+	 *	Initiates a split on the player's hand
+	 *
+	*/
+	void split();
+
+	/**
+	 * Checks if the player has gone bust
+	 * @return true if bust, else false
+	*/
+	bool checkBust();
+
+	/**
+	 * Retrieves the score of the player
+	 * @return the player's score
+	*/
+	int getScore();
+
+	/**
+	 * Gets the players hands
+	 * @return a vector of the player's current hands
+	*/
+	std::vector<Hand*> getHand();
+
+private:
+	std::vector<Hand*> hand;
+	std::string name;
+	int score;
+};
+#endif
+
