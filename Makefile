@@ -12,7 +12,7 @@
 ################################################################################
 
 # Executable names
-PROJECT = BLACKJACK
+PROJECT = blackjack
 GTEST = test_${PROJECT}
 
 # Compilation command and flags
