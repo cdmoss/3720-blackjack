@@ -28,13 +28,13 @@ class Deck {
     virtual void shuffle();
 
     /**
-    *    Return a random card from the deck to deal??
+    *    Return a random card from the deck to deal
     *    @return The randomly picked card object
     */
     virtual Card* dealCard();
 
     /**
-    *    Add a Card to the deck??
+    *    Add a Card to the deck
     *    @param card : The card being added
     */
     virtual void addCard(Card card);

@@ -1,6 +1,11 @@
 #ifndef CARD_H
 #define CARD_H
 
+//#include Hand.h;
+
+// Forward declarations to be removed once other classes have been created
+class Hand;
+
 enum Rank {
     ACE,
     TWO,
@@ -48,13 +53,14 @@ class Card {
     virtual int getValue();
 
     /**
-    *    Calculates the value of an Ace card depending on the hand
-    *    score. If the player's hand score is less than 21, the ace's
-    *    value will be 11. If the player's score exceeds 21 with
-    *    an Ace in their hand, the Ace's value will be considered as 1.
-    *    @return The value of the ace card
+    *   Calculates the value of an Ace card depending on the hand
+    *   score. If the player's hand score is less than 21, the ace's
+    *   value will be 11. If the player's score exceeds 21 with
+    *   an Ace in their hand, the Ace's value will be considered as 1.
+    *   @param hand : The hand determining the ace card's value
+    *   @return The value of the ace card
     */
-    virtual int aceValue(Hand*);
+    virtual int aceValue(Hand* hand);
 
  private:
     Suit suit;
