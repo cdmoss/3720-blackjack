@@ -1,9 +1,9 @@
 #ifndef BLACKJACK_H
 #define BLACKJACK_H
 
-#include "Player.h"
-#include "Deck.h"
-#include "UI.h"
+//#include "Player.h"
+//#include "Deck.h"
+//#include "UI.h"
 
 #include <vector>
 
@@ -16,10 +16,10 @@ class Blackjack {
     public:
     /**
     *   Create a Blackjack object
-    *   @param players Vector of Player pointers to Players who are playing the game
-    *   @param dealer Player pointer indicating the Dealer of the game
-    *   @param deck Deck pointer indicating the deck of cards to be played
-    *   @param ui UI pointer indcating the initial User Interface
+    *   @param players : Vector of Player pointers to Players who are playing the game
+    *   @param dealer : Player pointer indicating the Dealer of the game
+    *   @param deck : Deck pointer indicating the deck of cards to be played
+    *   @param ui : UI pointer indcating the initial User Interface
     */
     Blackjack(vector::vector<Player*> players, Player* dealer,
     Deck* deck, UI* ui);
@@ -36,19 +36,19 @@ class Blackjack {
 
    /**
    *    Deal a card to a specified player
-   *    @param player Player designated to recieve the dealt card
+   *    @param player : The Player designated to recieve the dealt card
    */
    virtual void dealCard(Player* player);
 
    /**
    *    Check to see if a players hand is a bust
-   *    @return true is the hand is above 21, false otherwise
+   *    @return True is the hand is above 21, false otherwise
    */
    virtual bool checkBust();
 
    /**
    *    Check to see if the game has been won
-   *    @return true if the game has been won, false otherwise
+   *    @return True if the game has been won, false otherwise
    */
    virtual bool checkWin();
 
@@ -64,7 +64,7 @@ class Blackjack {
 
    /**
    *    Change the view for blackjack
-   *    @param ui UI pointer that indicates the User interface to change to
+   *    @param ui : UI pointer that indicates the User interface to change to
    */
    virtual void setUI(UI* ui);
 
