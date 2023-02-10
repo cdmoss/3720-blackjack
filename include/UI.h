@@ -28,7 +28,6 @@ class UI {
    *    @return true : if Players choice is to play again, false otherwise
    */
   virtual bool playAgain();
-
 };
 
 #endif
