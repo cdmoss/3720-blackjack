@@ -39,12 +39,6 @@ class Blackjack {
   virtual void dealCard(Player* player);
 
   /**
-   *    Check to see if a players hand is a bust
-   *    @return True is the hand is above 21, false otherwise
-   */
-  virtual bool checkBust();
-
-  /**
    *    Check to see if the game has been won
    *    @return True if the game has been won, false otherwise
    */
