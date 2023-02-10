@@ -1,15 +1,13 @@
 #ifndef BLACKJACK_H
 #define BLACKJACK_H
 
-// #include "Player.h"
-// #include "Deck.h"
+#include "Player.h"
+#include "Deck.h"
 // #include "UI.h"
 
 #include <vector>
 
 // Forward declarations to be removed once other classes have been created
-class Player;
-class Deck;
 class UI;
 
 class Blackjack {

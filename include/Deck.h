@@ -1,12 +1,9 @@
 #ifndef DECK_H
 #define DECK_H
 
-// #include "Card.h"
+#include "Card.h"
 
 #include <vector>
-
-// Forward declarations to be removed once other classes have been created
-class Card;
 
 class Deck {
  public:
