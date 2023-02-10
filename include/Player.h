@@ -30,6 +30,11 @@ class Player {
    *
    */
   void split();
+  
+  /**
+   *  Sets the current hand in play to stand status
+   * */
+  void stand();
 
   /**
    * Checks if the player has gone bust
