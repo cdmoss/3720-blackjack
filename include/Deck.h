@@ -17,12 +17,6 @@ class Deck {
   Deck(std::vector<Card*> cards);
 
   /**
-   *   Retrieve the deck of cards.
-   *   @return The vector of cards.
-   */
-  virtual std::vector<Card> getCards();
-
-  /**
    *    Randomize the order of the deck
    */
   virtual void shuffle();
