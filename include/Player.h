@@ -6,7 +6,7 @@
 #include <vector>
 
 class Player {
-public:
+ public:
   /**
    *	Constructor
    *	@param name : The player's name
@@ -49,7 +49,7 @@ public:
    */
   std::vector<Hand *> getHand();
 
-private:
+ private:
   std::vector<Hand *> hand;
   std::string name;
   int score;
