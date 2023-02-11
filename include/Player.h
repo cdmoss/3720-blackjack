@@ -2,6 +2,7 @@
 #define PLAYER_H
 
 #include "Card.h"
+//#include "Hand.h"
 #include <string>
 #include <vector>
 
@@ -27,13 +28,12 @@ class Player {
 
   /**
    *	Initiates a split on the player's hand
-   *
    */
   void split();
-  
+
   /**
    *  Sets the current hand in play to stand status
-   * */
+   */
   void stand();
 
   /**

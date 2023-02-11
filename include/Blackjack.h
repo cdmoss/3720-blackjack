@@ -1,15 +1,13 @@
 #ifndef BLACKJACK_H
 #define BLACKJACK_H
 
-// #include "Player.h"
-// #include "Deck.h"
+#include "Player.h"
+#include "Deck.h"
 // #include "UI.h"
 
 #include <vector>
 
 // Forward declarations to be removed once other classes have been created
-class Player;
-class Deck;
 class UI;
 
 class Blackjack {
@@ -39,12 +37,6 @@ class Blackjack {
    *    @param player : The Player designated to recieve the dealt card
    */
   virtual void dealCard(Player* player);
-
-  /**
-   *    Check to see if a players hand is a bust
-   *    @return True is the hand is above 21, false otherwise
-   */
-  virtual bool checkBust();
 
   /**
    *    Check to see if the game has been won

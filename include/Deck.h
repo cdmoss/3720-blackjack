@@ -1,12 +1,9 @@
 #ifndef DECK_H
 #define DECK_H
 
-// #include "Card.h"
+#include "Card.h"
 
 #include <vector>
-
-// Forward declarations to be removed once other classes have been created
-class Card;
 
 class Deck {
  public:
@@ -15,12 +12,6 @@ class Deck {
    *   @param cards : Vector of Card pointers to Cards that are in the deck
    */
   Deck(std::vector<Card*> cards);
-
-  /**
-   *   Retrieve the deck of cards.
-   *   @return The vector of cards.
-   */
-  virtual std::vector<Card> getCards();
 
   /**
    *    Randomize the order of the deck
