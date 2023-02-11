@@ -1,7 +1,7 @@
 #ifndef CARD_H
 #define CARD_H
 
-// #include Hand.h;
+#include "Hand.h"
 
 // Forward declarations to be removed once other classes have been created
 class Hand;
@@ -22,7 +22,12 @@ enum Rank {
   KING
 };
 
-enum Suit { CLUB, SPACE, HEART, DIAMOND };
+enum Suit {
+  CLUB,
+  SPACE,
+  HEART,
+  DIAMOND
+};
 
 class Card {
  public:
@@ -55,7 +60,7 @@ class Card {
    *   @param hand : The hand determining the ace card's value
    *   @return The value of the ace card
    */
-  virtual int aceValue(Hand* hand);
+  virtual int aceValue(Hand *hand);
 
  private:
   Suit suit;
