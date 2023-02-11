@@ -1,7 +1,7 @@
 #ifndef CARD_H
 #define CARD_H
 
-#include Hand.h;
+#include "Hand.h";
 
 // Forward declarations to be removed once other classes have been created
 class Hand;
