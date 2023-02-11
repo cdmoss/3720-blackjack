@@ -11,6 +11,8 @@
 #include "Card.h"
 #include <vector>
 
+class Card;
+
 class Hand {
  public:
   /**
