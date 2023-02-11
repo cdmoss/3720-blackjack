@@ -3,7 +3,7 @@
 
 #include "Player.h"
 #include "Deck.h"
-// #include "UI.h"
+#include "UI.h"
 
 #include <vector>
 
@@ -20,7 +20,7 @@ class Blackjack {
    *   @param deck : Deck pointer indicating the deck of cards to be played
    *   @param ui : UI pointer indcating the initial User Interface
    */
-  Blackjack(std::vector<Player*> players, Player* dealer, Deck* deck, UI* ui);
+  Blackjack(std::vector<Player*> players, Player *dealer, Deck *deck, UI *ui);
 
   /**
    *   Play a round of blackjack
@@ -36,7 +36,7 @@ class Blackjack {
    *    Deal a card to a specified player
    *    @param player : The Player designated to recieve the dealt card
    */
-  virtual void dealCard(Player* player);
+  virtual void dealCard(Player *player);
 
   /**
    *    Check to see if the game has been won
@@ -58,13 +58,13 @@ class Blackjack {
    *    Change the view for blackjack
    *    @param ui : UI pointer that indicates the User interface to change to
    */
-  virtual void setUI(UI* ui);
+  virtual void setUI(UI *ui);
 
  private:
-  Player* dealer;               /**< Dealer of the game */
+  Player *dealer; /**< Dealer of the game */
   std::vector<Player*> players; /**< List of players in the game */
-  Deck* deck;                   /**< Deck of cards to be used */
-  UI* ui;                       /**< Current user interface */
+  Deck *deck; /**< Deck of cards to be used */
+  UI *ui; /**< Current user interface */
 };
 
 #endif

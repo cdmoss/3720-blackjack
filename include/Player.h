@@ -2,7 +2,7 @@
 #define PLAYER_H
 
 #include "Card.h"
-//#include "Hand.h"
+#include "Hand.h"
 #include <string>
 #include <vector>
 
@@ -52,10 +52,10 @@ class Player {
    * Gets the players hands
    * @return a vector of the player's current hands
    */
-  std::vector<Hand *> getHand();
+  std::vector<Hand*> getHand();
 
  private:
-  std::vector<Hand *> hand;
+  std::vector<Hand*> hand;
   std::string name;
   int score;
 };
