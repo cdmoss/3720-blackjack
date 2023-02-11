@@ -58,5 +58,6 @@ class Player {
   std::vector<Hand *> hand;
   std::string name;
   int score;
+  int currentHand; // informs hit, split, stand, checkBust, and getScore which hand to interact with
 };
 #endif
