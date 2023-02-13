@@ -43,10 +43,20 @@ class Player {
   bool checkBust();
 
   /**
-   * Retrieves the score of the player
-   * @return the player's score
+   * Retrieves the amount of round won by the player
+   * @return the amount of rounds won
    */
-  int getScore();
+  int getRoundsWon();
+
+  /**
+   * Increments the rounds won by the player
+  */
+  void winRound();
+
+  /**
+   * @return the turnIsActive status, which is true if the the player still has non busted hands that the player has not stood
+  */
+  bool getTurnIsActive();
 
   /**
    * Gets the players hands
@@ -59,5 +69,6 @@ class Player {
   std::string name;
   int score;
   int currentHand; // informs hit, split, stand, checkBust, and getScore which hand to interact with
+  bool turnIsActive;
 };
 #endif

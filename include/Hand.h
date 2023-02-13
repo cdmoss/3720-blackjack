@@ -45,16 +45,15 @@ class Hand {
   void removeCard();
 
   /**
-   * sets the hand to stand to stand and not draw a card
-   * @param stand: bool for whether to stand or not
+   * sets the hand to finished and not draw a card (when stand is called or the hand goes bust)
+   * @param stand: bool for whether the hand is finished or not
    */
-  void setStand(bool stand);
+  void setFinished(bool stand);
 
   /**
-   * returns whether a hand is standing
-   * @return bool of thwther the hand is standing
+   * gets the finished status of the hand
    */
-  bool getStand();
+  bool getFinished();
 
  private:
   std::vector<Card*> cards;  //a vector of card pointers in the hand

@@ -45,7 +45,7 @@ class Card {
   virtual Rank getRank();
 
   /**
-   *   Return the value of the deck. A card's value is the rank they
+   *   Return the value of the card. A card's value is the rank they
    *   have. If the rank is a J/Q/K, their value is 10. If the Rank
    *   is an Ace, run aceValue to determine its value.
    *   @return The value of the card
@@ -53,14 +53,9 @@ class Card {
   virtual int getValue();
 
   /**
-   *   Calculates the value of an Ace card depending on the hand
-   *   score. If the player's hand score is less than 21, the ace's
-   *   value will be 11. If the player's score exceeds 21 with
-   *   an Ace in their hand, the Ace's value will be considered as 1.
-   *   @param hand : The hand determining the ace card's value
-   *   @return The value of the ace card
-   */
-  virtual int aceValue(Hand *hand);
+   *   Returns the suit of the card
+  */
+  virtual Suit getSuit();
 
  private:
   Suit suit;

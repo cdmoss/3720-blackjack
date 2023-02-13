@@ -23,6 +23,10 @@ class Blackjack {
   Blackjack(std::vector<Player*> players, Player *dealer, Deck *deck, UI *ui);
 
   /**
+   *   Start a game of blackjack
+  */
+  virtual void playGame();
+  /**
    *   Play a round of blackjack
    */
   virtual void playRound();
@@ -65,6 +69,7 @@ class Blackjack {
   std::vector<Player*> players; /**< List of players in the game */
   Deck *deck; /**< Deck of cards to be used */
   UI *ui; /**< Current user interface */
+  int currentPlayer; // Currently active player
 };
 
 #endif

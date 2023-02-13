@@ -4,9 +4,10 @@
 class UI {
  public:
   /**
-   *    Display the hand
-   */
-  virtual void displayHand() = 0;
+    * Displays the hand of a player
+    * @param player the player who owns the hand to be displayed
+    */
+  virtual void displayHand(Player* player) = 0;
 
   /**
    *    Displays helpful information to the UI
@@ -15,8 +16,9 @@ class UI {
 
   /**
    *    Function which handles the input for a player during their turn
+   *    @return the choice of the player
    */
-  virtual void handleInput();
+  virtual int handleInput();
 
    /**
    *    Displays the winner(s) to the UI
