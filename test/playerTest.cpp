@@ -18,7 +18,7 @@ TEST_F(PlayerTest, PlayerTestSequence) {
     player->hit(ace_heart);
 
     //Checking the players hand size
-    EXPECT_EQ(player->getHand().sizeof(), 1);
+    EXPECT_EQ(player->getHand().size(), 1);
 
     //Expecting the first card returned from their hand is an ACE
     EXPECT_EQ(player->getHand().at(0)->getCards().at(0)->getRank(),
@@ -28,7 +28,7 @@ TEST_F(PlayerTest, PlayerTestSequence) {
     player->split();
 
     //Verifying the player now has 2 hands
-    EXPECT_EQ(player->getHand().sizeof(), 2);
+    EXPECT_EQ(player->getHand().size(), 2);
 
     //Creating 2 new Card*
     Card* ten_spade = new Card(Rank::TEN, Suit::SPADE);
