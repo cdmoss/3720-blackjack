@@ -24,7 +24,7 @@ enum Rank {
 
 enum Suit {
   CLUB,
-  SPACE,
+  SPADE,
   HEART,
   DIAMOND
 };

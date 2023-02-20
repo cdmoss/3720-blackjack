@@ -8,9 +8,8 @@ class Deck {
  public:
   /**
    *   Create a Deck object
-   *   @param cards : Vector of Card pointers to Cards that are in the deck
    */
-  Deck(std::vector<Card*> cards);
+  Deck();
 
   /**
    *    Randomize the order of the deck
@@ -27,7 +26,7 @@ class Deck {
    *    Add a Card to the deck
    *    @param card : The card being added
    */
-  virtual void addCard(Card card);
+  virtual void addCard(Card* card);
 
  private:
   std::vector<Card*> Cards; /**< List of cards in the deck */

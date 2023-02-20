@@ -7,9 +7,6 @@
 
 #include <vector>
 
-// Forward declarations to be removed once other classes have been created
-class UI;
-
 class Blackjack {
  public:
   /**
